@@ -43,14 +43,29 @@ document.querySelector('#app').innerHTML = `
             backend e tecnologias Java.
         </p>
 
+        <div class="perfil-date"></div>
+
         <div class="perfil-info">
             <span>Ceará, Brasil</span>
-            <span>Java</span>
         </div>
 
         <button>
-            <a href='https://www.linkedin.com/in/diegodmatos/' class="perfil-link"> Ver Perfil</a>
+            <a href="https://www.linkedin.com/in/diegodmatos/" class="perfil-link">
+                Ver Perfil
+            </a>
         </button>
 
     </div>
 `
+
+const date = document.querySelector('.perfil-date')
+
+function updateDate() {
+    const now = new Date()
+
+    date.textContent = now.toLocaleString('pt-BR')
+}
+
+updateDate()
+
+setInterval(updateDate, 1000)

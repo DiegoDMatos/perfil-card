@@ -105,6 +105,14 @@
     color: #666;
 }
 
+.perfil-date {
+    text-align: center;
+    margin: 0 0 16px;
+    font-size: 18px;
+    color: #646cff;
+    font-weight: 600;
+}
+
 .perfil-info {
     justify-content: center;
     align-items: center;
