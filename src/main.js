@@ -1,12 +1,16 @@
 import './style.css'
 
-document.querySelector('#app').innerHTML = `
-  <div class="profile-card">
+const user = {
+    name: 'Diego Matos',
+    photo: null
+}
 
-    <img 
-      src="./src/assets/hero.png" 
-      alt="Foto de perfil"
-    >
+document.querySelector('#app').innerHTML = `
+  <div class="perfil-card">
+
+    <div class="perfil-image">
+      DM
+    </div>
 
     <h1>Diego Matos</h1>
 
